@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;600&display=swap');
+
+@mixin text ($fontF, $fontS, $color, $textA){
+  font-family: $fontF;
+  font-size: $fontS;
+  color: $color;
+  text-align: $textA;
+}
+
+
+
+  .container{
+    max-width: 1200px;
+    min-width: 993px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-subtitle{
+    background-color: #ffffff;
+  }
+
+  .contentEditor{
+    height: 300px;
+  }
+
+  .contentEditor{
+    &__period{
+      @include text('﻿Montserrat-Regular', 14px, rgba(132, 142, 151, 255), center);
+      padding-top: 30px;
+    }
+    &__title{
+      @include text('Montserrat-Bold', 39.61617px, rgba(99, 92, 115, 255), center);
+      padding: 20px 0 20px 0;
+      margin: 0 auto;
+      text-transform: uppercase;
+    }
+    &__subtitle{
+      @include text(' ﻿Lato-Regular', 15.40629px, rgba(50, 50, 50, 255), center);
+      width: 50%;
+      padding: 0 25% 0 25%;
+      margin-bottom: 36px;
+    }
+    &__button{
+      display: grid;
+      grid-template-columns: 32% 32% 32%;
+      padding: 2px 0;
+      width: 350px;
+      flex-shrink: 0;
+      list-style-type: none;
+      margin: 0 auto;
+    }
+    &__item{
+      margin-left: 5px;
+    }
+  }
+
+a{
+  text-decoration: none;
+}
+.tooltipped{
+  position: relative;
+}
+
+.btn{
+  color: #24292e;
+  background-color: #fafbfc;
+  box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+  transition: background-color .2s cubic-bezier(.3,0,.5,1);
+  display: inline-block;
+  font-weight: 500;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(27,31,35,.15);
+  border-radius: 6px;
+  appearance: none;
+  max-width: 300px;
+  height: 20px;
+}
+
+.btn-sm{
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.btn-with-count{
+  float: left;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn .octicon:only-child {
+  margin-right: 0;
+}
+
+.btn-sm .octicon {
+  vertical-align: text-top;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.btn .octicon {
+  margin-right: 4px;
+  color: #6a737d;
+  vertical-align: text-bottom;
+}
+
+.octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+.social-count {
+  height: 20px;
+  position: relative;
+  float: left;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid rgba(27,31,35,.15);
+  border-left: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+}
+
+////////////////////HOVER/////////////////////
+
+.btn:hover {
+  background: #c0c0c0;
+}
+.social-count:hover{
+  color: blue;
+}
+
+.button-item2{
+  margin-left: 11px;
+}
+///////////////////MEDIA-992/////////////////
+
+
+
+@media  (max-width: 992px){
+  .container{
+    max-width: 992px;
+    min-width: 481px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-subtitle{
+    background-color: #ffffff;
+  }
+
+  .contentEditor{
+    height: 300px;
+  }
+
+  .contentEditor{
+    &__period{
+      @include text('﻿Montserrat-Regular', 14px, rgba(132, 142, 151, 255), center);
+      padding-top: 30px;
+    }
+    &__title{
+      @include text('Montserrat-Bold', 39.61617px, rgba(99, 92, 115, 255), center);
+      padding: 20px 0 20px 0;
+      margin: 0 auto;
+      text-transform: uppercase;
+    }
+    &__subtitle{
+      @include text(' ﻿Lato-Regular', 15.40629px, rgba(50, 50, 50, 255), center);
+      width: 90%;
+      padding: 0 5% 0 5%;
+      margin-bottom: 20px;
+    }
+    &__button{
+      display: grid;
+      grid-template-columns: 32% 32% 32%;
+      padding: 2px 0;
+      list-style-type: none;
+      margin: 0 auto;
+    }
+    &__item{
+      margin-left: 5px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .tooltipped{
+    position: relative;
+  }
+
+  .btn{
+    color: #24292e;
+    background-color: #fafbfc;
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+    transition: background-color .2s cubic-bezier(.3,0,.5,1);
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid rgba(27,31,35,.15);
+    border-radius: 6px;
+    appearance: none;
+    max-width: 300px;
+    height: 20px;
+  }
+
+  .btn-sm{
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .btn-with-count{
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .btn .octicon:only-child {
+    margin-right: 0;
+  }
+
+  .btn-sm .octicon {
+    vertical-align: text-top;
+  }
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  .btn .octicon {
+    margin-right: 4px;
+    color: #6a737d;
+    vertical-align: text-bottom;
+  }
+
+  .octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+  }
+
+  .social-count {
+    height: 20px;
+    position: relative;
+    float: left;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,.15);
+    border-left: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+  }
+
+  ////////////////////HOVER/////////////////////
+
+  .btn:hover {
+    background: #c0c0c0;
+  }
+  .social-count:hover{
+    color: blue;
+  }
+}
+
+.button-item2{
+  margin-left: 11px;
+}
+////////////
+///////////////////////////MEDIA480
+////////////
+
+
+@media  (max-width: 480px){
+  .container{
+    max-width: 480px;
+    min-width: 320px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-subtitle{
+    background-color: #ffffff;
+    height: 350px;
+  }
+
+  .contentEditor{
+    height: 300px;
+  }
+
+  .contentEditor{
+    &__period{
+      @include text('﻿Montserrat-Regular', 14px, rgba(132, 142, 151, 255), center);
+      padding-top: 30px;
+    }
+    &__title{
+      @include text('Montserrat-Bold', 29.61617px, rgba(99, 92, 115, 255), center);
+      padding: 20px 0 20px 0;
+      margin: 0 auto;
+      text-transform: uppercase;
+      width: 100%;
+    }
+    &__subtitle{
+      @include text(' ﻿Lato-Regular', 15.40629px, rgba(50, 50, 50, 255), center);
+      width: 90%;
+      padding: 0 5% 0 5%;
+      margin-bottom: 20px;
+    }
+    &__button{
+      display: grid;
+      grid-template-columns: 48% 48%;
+      width: 365px;
+      padding: 2px 0;
+      flex-shrink: 0;
+      list-style-type: none;
+      //margin: 0 10%;
+    }
+    &__item{
+      margin-top: 10px;
+      margin-left: 15%;
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .tooltipped{
+    position: relative;
+  }
+
+  .btn{
+    color: #24292e;
+    background-color: #fafbfc;
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+    transition: background-color .2s cubic-bezier(.3,0,.5,1);
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid rgba(27,31,35,.15);
+    border-radius: 6px;
+    appearance: none;
+    max-width: 300px;
+    height: 20px;
+  }
+
+  .btn-sm{
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .btn-with-count{
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .btn .octicon:only-child {
+    margin-right: 0;
+  }
+
+  .btn-sm .octicon {
+    vertical-align: text-top;
+  }
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  .btn .octicon {
+    margin-right: 4px;
+    color: #6a737d;
+    vertical-align: text-bottom;
+  }
+
+  .octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+  }
+
+  .social-count {
+    height: 20px;
+    position: relative;
+    float: left;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,.15);
+    border-left: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+  }
+
+  ////////////////////HOVER/////////////////////
+
+  .btn:hover {
+    background: #c0c0c0;
+  }
+  .social-count:hover{
+    color: blue;
+  }
+
+  .button-item1{
+    margin-left: 35%;
+  }
+
+  .button-item2{
+    margin-left: 5%;
+  }
+
+  .button-item3{
+    margin-left: 32%;
+    grid-column: 1/3;
+  }
+
+}

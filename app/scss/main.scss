@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;600&display=swap');
+
+@import "Navbar";
+@import "main-subtitle";
+@import "main-title";
+@import "main-content";
+@import "main-logo";
+@import "footer";
+
+/////
+
+@mixin text ($fontF, $fontS, $color, $textA){
+  font-family: $fontF;
+  font-size: $fontS;
+  color: $color;
+  text-align: $textA;
+}
+
+/////
+
+
+body {
+  margin: 0 auto;
+ //display: none;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+}
+
+
+
+
+@media  (max-width: 992px){
+  .container{
+    max-width: 768px;
+    min-width: 481px;
+  }
+
+}
+
+@media  (max-width: 480px){
+  .container{
+    max-width: 480px;
+    min-width: 320px;
+  }
+}
+

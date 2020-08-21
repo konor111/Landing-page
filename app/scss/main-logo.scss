@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;600&display=swap');
+
+@mixin text ($fontF, $fontS, $color, $textA){
+  font-family: $fontF;
+  font-size: $fontS;
+  color: $color;
+  text-align: $textA;
+}
+
+
+
+  .container{
+    max-width: 1200px;
+    min-width: 993px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-logo{
+    padding-top: 98px;
+    padding-bottom: 1px;
+    min-height: 761px;
+    background: url("../img/backgraund/testmonials-bg@1X.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .Logo{
+    margin-top: 92px;
+    margin-bottom: 118px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__title{
+      @include text('Montserrat-Bold', 35.21437px, rgba(255, 255, 255, 255), center);
+    }
+    &__blok{
+      //margin-bottom: 75px;
+    }
+    &__text{
+      width: 320px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      @include text('Lato-BoldItalic', 16px, rgba(255, 255, 255, 255), center)
+    }
+    &__imgBlok{
+      min-height: 64px;
+    }
+    &__img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__footer{
+      @include text('Lato-Regular', 14px, rgba(162, 145, 165, 255), center);
+      width: 70%;
+      padding: 0 15% 0 15%;
+    }
+    &__underline{
+      width: 60%;
+      height: 2px;
+      border-color: #645766;
+    }
+  }
+
+//////////////////////////////
+.Logo-center{
+  padding-top: 18px;
+}
+//////////////////////////////
+
+
+  ////////////////Media-992/////////////////////
+
+
+@media  (max-width: 992px){
+  .container{
+    max-width: 992px;
+    min-width: 481px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-logo{
+    padding-top: 79px;
+    padding-bottom: 1px;
+    min-height: 761px;
+    background: url("../img/backgraund/testmonials-bg@1X.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .Logo{
+    margin-top: 68px;
+    margin-bottom: 96px;
+    padding: 0px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__title{
+      @include text('Montserrat-Bold', 35.21437px, rgba(255, 255, 255, 255), center);
+      width: 100%;
+    }
+    &__blok{
+      flex: 1 0 340px;
+      max-width: 340px;
+    }
+    &__text{
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @include text('Lato-BoldItalic', 16px, rgba(255, 255, 255, 255), center)
+    }
+    &__imgBlok{
+      min-height: 64px;
+    }
+    &__img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__footer{
+      @include text('Lato-Regular', 14px, rgba(162, 145, 165, 255), center);
+      width: 70%;
+      padding: 0 15% 0 15%;
+    }
+    &__underline{
+      width: 60%;
+      height: 2px;
+      border-color: #645766;
+    }
+  }
+
+
+  /////////////////////////////////////////
+
+  .Logo-center{
+    padding-top: 18px;
+  }
+}
+
+////////////
+///////////////////////////MEDIA480
+////////////
+
+
+@media  (max-width: 480px){
+  .container{
+    max-width: 480px;
+    min-width: 320px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-logo{
+    padding-top: 79px;
+    padding-bottom: 1px;
+    min-height: 761px;
+    background: url("../img/backgraund/testmonials-bg@1X.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .Logo{
+    margin-top: 68px;
+    margin-bottom: 10px;
+    padding: 0px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__title{
+      @include text('Montserrat-Bold', 35.21437px, rgba(255, 255, 255, 255), center);
+      width: 100%;
+    }
+    &__blok{
+      flex: 1 0 100%;
+      max-width: 340px;
+      padding-right: 8%;
+    }
+    &__text{
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @include text('Lato-BoldItalic', 16px, rgba(255, 255, 255, 255), center)
+    }
+    &__imgBlok{
+      min-height: 64px;
+    }
+    &__img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__footer{
+      @include text('Lato-Regular', 14px, rgba(162, 145, 165, 255), center);
+      width: 70%;
+      padding: 0 15% 0 15%;
+      display: none;
+    }
+    &__underline{
+      width: 60%;
+      border-color: #645766;
+      margin-bottom: 50px;
+    }
+  }
+
+
+  /////////////////////////////////////////
+
+  .Logo-center{
+    padding-top: 18px;
+  }
+}
+
+

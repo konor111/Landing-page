@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;600&display=swap');
+
+@mixin text ($fontF, $fontS, $color, $textA){
+  font-family: $fontF;
+  font-size: $fontS;
+  color: $color;
+  text-align: $textA;
+}
+
+
+
+  .container{
+    max-width: 1200px;
+    min-width: 993px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .footer{
+    background-image: url("../img/backgraund/Layer 2@1X.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 847px;
+
+    &__title{
+      @include text('Montserrat-Bold',  35.21437px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 80px;
+      padding-bottom: 71px;
+    }
+  }
+
+  .purchase{
+    //padding: 0 20% 5% 20% ;
+    display: grid;
+    grid-template-columns: 22% 22% 24% 22%;
+    width: 100%;
+
+    &__blok{
+      height: 457px;
+      margin-top: 40px;
+      padding-left: 2.5%;
+      //flex: 0 1 24%;
+      //margin-top: 50px;
+    }
+    &__header{
+      @include text('Mo ntserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
+      text-transform: uppercase;
+      height: 97px;
+      width: 100%;
+      background-color: rgba(115, 96, 107, 0.4);
+    }
+    &__title{
+      padding-top: 46px;
+    }
+    &__content{
+      height: 360px;
+      width: 100%;
+      background-color: rgba(111, 89, 104, 0.4);
+    }
+    &__cost{
+      margin: 0 auto;
+      @include text('Montserrat-Bold', 50px, rgba(255, 255, 255, 255), center);
+      padding-top: 32px;
+      letter-spacing: 1px;
+    }
+    &__text{
+      @include text('Montserrat-Regular', 12pt, rgba(255, 255, 255, 0.3), center);
+      padding-top: 14px;
+      margin: 0 auto;
+    }
+    &__underline{
+      margin: 0 auto;
+      margin-top: 38px;
+      width: 30%;
+      height: 3px;
+      background-color: #8d81ac;
+      border-color: #8d81ac;
+    }
+    &__footer{
+      @include text('Montserrat-Regular', 12px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 31px;
+    }
+    &__button{
+      display: inline-block;
+      width: 60%;
+      height: 42px;
+      background: rgba(115, 96, 107, 0.6);
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      margin-top: 40px;
+      margin-left: 17%;
+      padding: .25em .5em;
+      outline: none;
+      border: 1px solid rgba(115, 96, 107, 0.6);
+      border-radius: 30px;
+    }
+
+  }
+  /////////////////////////////////
+  .text-purchase{
+    &__button{
+      @include text('Montserrat-Regular', 15px, rgba(255, 255, 255, 255), center);
+      padding-top: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .big-purchase{
+    &__blok{
+      height: 560px;
+      padding-left: 2.5%;
+    }
+    &__header{
+      @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
+      text-transform: uppercase;
+      height: 111px;
+      width: 100%;
+      background-color: rgba(57, 45, 61, 0.4);;
+    }
+    &__title{
+      padding-top: 51px;
+    }
+    &__content{
+      height: 449px;
+      width: 100%;
+      background-color: rgba(67, 51, 68, 0.4);
+    }
+    &__cost{
+      margin: 0 auto;
+      @include text('Montserrat-Bold', 70px, rgba(255, 255, 255, 255), center);
+      padding-top: 15px;
+      letter-spacing: 1px;
+    }
+    &__text{
+      @include text('Montserrat-Regular', 17pt, rgba(255, 255, 255, 0.3), center);
+      padding-top: 12px;
+      margin: 0 auto;
+    }
+    &__underline{
+      margin: 0 auto;
+      margin-top: 48px;
+      width: 30%;
+      height: 3px;
+      background-color: #8d81ac;
+      border-color: #8d81ac;
+    }
+    &__footer{
+      @include text('Montserrat-Regular', 12px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 41px;
+    }
+    &__button{
+      display: inline-block;
+      width: 60%;
+      height: 52px;
+      background: rgba(115, 96, 107, 0.6);
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      margin-top: 80px;
+      margin-left: 17%;
+      padding: .25em .5em;
+      outline: none;
+      border: 1px solid rgba(115, 96, 107, 0.6);
+      border-radius: 35px;
+    }
+  }
+
+  .big-text-purchase__button{
+    @include text('Montserrat-Regular', 15px, rgba(255, 255, 255, 255), center);
+    padding-top: 18px;
+    text-transform: uppercase;
+  }
+  //////////////////////////////////
+
+  .purchase__button:hover{
+    background: rgba(208, 203, 208, 0.7);
+  }
+  .purchase__button:hover .text-purchase__button {
+    @include text('Montserrat-Regular', 15px, rgba(127, 109, 120, 255), center);
+    text-transform: uppercase;
+  }
+
+  .big-purchase__button:hover{
+    background: rgba(208, 203, 208, 0.7);
+  }
+  .big-purchase__button:hover .big-text-purchase__button{
+    @include text('Montserrat-Regular', 15px, rgba(127, 109, 120, 255), center);
+    text-transform: uppercase;
+  }
+
+  ////////////////////////MEDIA-992/////////////////////////////////
+
+@media  (max-width: 992px){
+  .container{
+    max-width: 992px;
+    min-width: 481px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .footer{
+    background: url("../img/backgraund/Layer 2@1X.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 1300px;
+
+    &__title{
+      @include text('Montserrat-Bold',  35.21437px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 80px;
+      padding-bottom: 0px;
+
+    }
+  }
+
+  .purchase{
+    padding: 0 20% 5% 20% ;
+    display: grid;
+    grid-template-columns: 28% 28%;
+    width: 100%;
+
+    &__blok{
+      height: 457px;
+      margin-top: 40px;
+      margin-left: 8%;
+    }
+    &__header{
+      @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
+      text-transform: uppercase;
+      height: 97px;
+      width: 100%;
+      background-color: rgba(115, 96, 107, 0.4);
+    }
+    &__title{
+      padding-top: 46px;
+    }
+    &__content{
+      height: 360px;
+      width: 100%;
+      background-color: rgba(111, 89, 104, 0.4);
+    }
+    &__cost{
+      margin: 0 auto;
+      @include text('Montserrat-Bold', 50px, rgba(255, 255, 255, 255), center);
+      padding-top: 32px;
+      letter-spacing: 1px;
+    }
+    &__text{
+      @include text('Montserrat-Regular', 12pt, rgba(255, 255, 255, 0.3), center);
+      padding-top: 14px;
+      margin: 0 auto;
+    }
+    &__underline{
+      margin: 0 auto;
+      margin-top: 38px;
+      width: 30%;
+      height: 3px;
+      background-color: #8d81ac;
+      border-color: #8d81ac;
+    }
+    &__footer{
+      @include text('Montserrat-Regular', 12px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 31px;
+    }
+    &__button{
+      display: inline-block;
+      width: 60%;
+      height: 42px;
+      background: rgba(115, 96, 107, 0.6);
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      margin-top: 40px;
+      margin-left: 17%;
+      padding: .25em .5em;
+      outline: none;
+      border: 1px solid rgba(115, 96, 107, 0.6);
+      border-radius: 30px;
+    }
+
+  }
+  /////////////////////////////////
+  .text-purchase{
+    &__button{
+      @include text('Montserrat-Regular', 15px, rgba(255, 255, 255, 255), center);
+      padding-top: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .big-purchase{
+    &__blok{
+      height: 560px;
+      margin-top: 20px;
+      min-width: 105%;
+    }
+    &__header{
+      @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
+      text-transform: uppercase;
+      height: 111px;
+      width: 100%;
+      background-color: rgba(57, 45, 61, 0.4);;
+    }
+    &__title{
+      padding-top: 51px;
+    }
+    &__content{
+      height: 449px;
+      width: 100%;
+      background-color: rgba(67, 51, 68, 0.4);
+    }
+    &__cost{
+      margin: 0 auto;
+      @include text('Montserrat-Bold', 70px, rgba(255, 255, 255, 255), center);
+      padding-top: 15px;
+      letter-spacing: 1px;
+    }
+    &__text{
+      @include text('Montserrat-Regular', 17pt, rgba(255, 255, 255, 0.3), center);
+      padding-top: 12px;
+      margin: 0 auto;
+    }
+    &__underline{
+      margin: 0 auto;
+      margin-top: 48px;
+      width: 30%;
+      height: 3px;
+      background-color: #8d81ac;
+      border-color: #8d81ac;
+    }
+    &__footer{
+      @include text('Montserrat-Regular', 12px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 41px;
+    }
+    &__button{
+      display: inline-block;
+      width: 60%;
+      height: 52px;
+      background: rgba(115, 96, 107, 0.6);
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      margin-top: 80px;
+      margin-left: 17%;
+      padding: .25em .5em;
+      outline: none;
+      border: 1px solid rgba(115, 96, 107, 0.6);
+      border-radius: 35px;
+    }
+  }
+
+  .big-text-purchase__button{
+    @include text('Montserrat-Regular', 15px, rgba(255, 255, 255, 255), center);
+    padding-top: 18px;
+    text-transform: uppercase;
+  }
+  //////////////////////////////////
+
+  .purchase__button:hover{
+    background: rgba(208, 203, 208, 0.7);
+  }
+  .purchase__button:hover .text-purchase__button {
+    @include text('Montserrat-Regular', 15px, rgba(127, 109, 120, 255), center);
+    text-transform: uppercase;
+  }
+
+  .big-purchase__button:hover{
+    background: rgba(208, 203, 208, 0.7);
+  }
+  .big-purchase__button:hover .big-text-purchase__button{
+    @include text('Montserrat-Regular', 15px, rgba(127, 109, 120, 255), center);
+    text-transform: uppercase;
+  }
+}
+
+////////////
+///////////////////////////MEDIA480
+////////////
+
+
+@media  (max-width: 480px){
+  .container{
+    max-width: 480px;
+    min-width: 320px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .footer{
+    background: url("../img/backgraund/Layer 2@1X.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 2220px;
+
+    &__title{
+      @include text('Montserrat-Bold',  35.21437px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 20px;
+      max-width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .purchase{
+    padding: 0 16% 0 12%;
+    display: grid;
+    grid-template-columns: 70%;
+    //flex-wrap: wrap;
+    //justify-content: center;
+    width: 100%;
+
+    &__blok{
+      height: 457px;
+      margin-top: 40px;
+      width: 100%;
+      padding-left: 2.5%;
+      margin-left: 0;
+    }
+    &__header{
+      @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
+      text-transform: uppercase;
+      height: 97px;
+      width: 100%;
+      background-color: rgba(115, 96, 107, 0.4);
+    }
+    &__title{
+      padding-top: 46px;
+    }
+    &__content{
+      height: 360px;
+      width: 100%;
+      background-color: rgba(111, 89, 104, 0.4);
+    }
+    &__cost{
+      margin: 0 auto;
+      @include text('Montserrat-Bold', 50px, rgba(255, 255, 255, 255), center);
+      padding-top: 32px;
+      letter-spacing: 1px;
+    }
+    &__text{
+      @include text('Montserrat-Regular', 12pt, rgba(255, 255, 255, 0.3), center);
+      padding-top: 14px;
+      margin: 0 auto;
+    }
+    &__underline{
+      margin: 0 auto;
+      margin-top: 38px;
+      width: 30%;
+      height: 3px;
+      background-color: #8d81ac;
+      border-color: #8d81ac;
+    }
+    &__footer{
+      @include text('Montserrat-Regular', 12px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 31px;
+    }
+    &__button{
+      display: inline-block;
+      width: 60%;
+      height: 42px;
+      background: rgba(115, 96, 107, 0.6);
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      margin-top: 40px;
+      margin-left: 17%;
+      padding: .25em .5em;
+      outline: none;
+      border: 1px solid rgba(115, 96, 107, 0.6);
+      border-radius: 30px;
+    }
+
+  }
+  /////////////////////////////////
+  .text-purchase{
+    &__button{
+      @include text('Montserrat-Regular', 15px, rgba(255, 255, 255, 255), center);
+      padding-top: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .big-purchase{
+    &__blok{
+      height: 560px;
+      margin-top: 20px;
+      min-width: 105%;
+      padding-left: 0;
+    }
+    &__header{
+      @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
+      text-transform: uppercase;
+      height: 111px;
+      width: 100%;
+      background-color: rgba(57, 45, 61, 0.4);;
+    }
+    &__title{
+      padding-top: 51px;
+    }
+    &__content{
+      height: 449px;
+      width: 100%;
+      background-color: rgba(67, 51, 68, 0.4);
+    }
+    &__cost{
+      margin: 0 auto;
+      @include text('Montserrat-Bold', 70px, rgba(255, 255, 255, 255), center);
+      padding-top: 15px;
+      letter-spacing: 1px;
+    }
+    &__text{
+      @include text('Montserrat-Regular', 17pt, rgba(255, 255, 255, 0.3), center);
+      padding-top: 12px;
+      margin: 0 auto;
+    }
+    &__underline{
+      margin: 0 auto;
+      margin-top: 48px;
+      width: 30%;
+      height: 3px;
+      background-color: #8d81ac;
+      border-color: #8d81ac;
+    }
+    &__footer{
+      @include text('Montserrat-Regular', 12px, rgba(255, 255, 255, 255), center);
+      margin: 0 auto;
+      padding-top: 41px;
+    }
+    &__button{
+      display: inline-block;
+      width: 60%;
+      height: 52px;
+      background: rgba(115, 96, 107, 0.6);
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      margin-top: 80px;
+      margin-left: 17%;
+      padding: .25em .5em;
+      outline: none;
+      border: 1px solid rgba(115, 96, 107, 0.6);
+      border-radius: 35px;
+    }
+  }
+
+  .big-text-purchase__button{
+    @include text('Montserrat-Regular', 15px, rgba(255, 255, 255, 255), center);
+    padding-top: 18px;
+    text-transform: uppercase;
+  }
+  //////////////////////////////////
+
+  .purchase__button:hover{
+    background: rgba(208, 203, 208, 0.7);
+  }
+  .purchase__button:hover .text-purchase__button {
+    @include text('Montserrat-Regular', 15px, rgba(127, 109, 120, 255), center);
+    text-transform: uppercase;
+  }
+
+  .big-purchase__button:hover{
+    background: rgba(208, 203, 208, 0.7);
+  }
+  .big-purchase__button:hover .big-text-purchase__button{
+    @include text('Montserrat-Regular', 15px, rgba(127, 109, 120, 255), center);
+    text-transform: uppercase;
+  }
+}

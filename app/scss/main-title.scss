@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;600&display=swap');
+
+@mixin text ($fontF, $fontS, $color, $textA){
+  font-family: $fontF;
+  font-size: $fontS;
+  color: $color;
+  text-align: $textA;
+}
+
+
+
+  .container{
+    max-width: 1200px;
+    min-width: 993px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-title{
+    background-image: url("../img/backgraund/img@1X.png");
+    //background: url("../img/backgraund/img@1X.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 700px;
+  }
+
+  .laptop{
+    //background: url("../img/backgraund/img@1X.png");
+    height: 700px;
+    &__text{
+      @include text('Montserrat-Regular', 11.73812px, rgba(132, 142, 151, 255), center);
+      margin: 0 auto;
+    }
+    &__button{
+      margin: 460px 35% 0 34%;
+      display: inline-block;
+      width: 30%;
+      height: 62px;
+      background: #8d81ac;
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      outline: none;
+      border: 1px solid rgba(141, 129, 172, 255);
+      border-radius: 60px;
+      text-align: center;
+    }
+    &__title{
+      @include text('Montserrat-Regular', 60.15788px, rgba(255, 255, 255, 255), center);
+      padding-top: 60px;
+      padding-bottom: 18px;
+      margin: 0 auto;
+    }
+    &__subtitle{
+      @include text('﻿Lato-Regular', 22.00898px, rgba(141, 129, 172, 255), center);
+      padding-bottom: 18px;
+    }
+  }
+
+
+  ////////////////////////////////////////////////////////////////////
+
+  .text-laptop{
+    &__button{
+      @include text('﻿Montserrat-Bold', 16px, rgba(255, 255, 255, 255), center);
+      padding-top: 25px;
+    }
+  }
+
+  ///////////////////////HOVER///////////////////////////
+
+  .laptop__button:hover{
+    background: #ffffff;
+  }
+
+  .laptop__button:hover .text-laptop__button{
+    color: rgba(141, 129, 172, 255);
+  }
+
+///////////////////////MEDIA-992///////////////////
+
+@media  (max-width: 992px){
+  .container{
+    max-width: 992px;
+    min-width: 481px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-title{
+    //background: black;
+    background: url("../img/backgraund/img@1X(2).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 682px;
+  }
+
+  .laptop{
+    //background: url("../img/backgraund/img@1X.png");
+    height: 682px;
+    &__text{
+      @include text('Montserrat-Regular', 11.73812px, rgba(132, 142, 151, 255), center);
+      margin: 0 auto;
+    }
+    &__button{
+      margin: 455px  20% 0 19%;
+      display: inline-block;
+      width: 60%;
+      height: 62px;
+      background: #8d81ac;
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      outline: none;
+      border: 1px solid rgba(141, 129, 172, 255);
+      border-radius: 60px;
+      text-align: center;
+    }
+    &__title{
+      @include text('Montserrat-Regular', 60.15788px, rgba(255, 255, 255, 255), center);
+      padding-top: 50px;
+      padding-bottom: 18px;
+      margin: 0 auto;
+    }
+    &__subtitle{
+      @include text('﻿Lato-Regular', 22.00898px, rgba(141, 129, 172, 255), center);
+      padding-bottom: 18px;
+    }
+  }
+
+
+  ////////////////////////////////////////////////////////////////////
+
+  .text-laptop{
+    &__button{
+      @include text('﻿Montserrat-Bold', 16px, rgba(255, 255, 255, 255), center);
+      padding-top: 25px;
+    }
+  }
+
+  ///////////////////////HOVER///////////////////////////
+
+  .laptop__button:hover{
+    background: #ffffff;
+  }
+
+  .laptop__button:hover .text-laptop__button{
+    color: rgba(141, 129, 172, 255);
+  }
+
+}
+
+////////////
+///////////////////////////MEDIA480
+////////////
+
+
+@media  (max-width: 480px){
+  .container{
+    max-width: 480px;
+    min-width: 320px;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .main-title{
+    //background: black;
+    background: url("../img/backgraund/img@1X(2).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 682px;
+  }
+
+  .laptop{
+    //background: url("../img/backgraund/img@1X.png");
+    height: 682px;
+    &__text{
+      @include text('Montserrat-Regular', 11.73812px, rgba(132, 142, 151, 255), center);
+      margin: 0 auto;
+    }
+    &__button{
+      margin: 428px 10% 0 9%;
+      display: inline-block;
+      width: 80%;
+      height: 62px;
+      background: #8d81ac;
+      font-size: 16px;
+      text-decoration: none;
+      user-select: none;
+      outline: none;
+      border: 1px solid rgba(141, 129, 172, 255);
+      border-radius: 60px;
+      text-align: center;
+    }
+    &__title{
+      @include text('Montserrat-Regular', 60.15788px, rgba(255, 255, 255, 255), center);
+      padding-top: 50px;
+      padding-bottom: 18px;
+      margin: 0 auto;
+    }
+    &__subtitle{
+      @include text('﻿Lato-Regular', 23.00898px, rgba(141, 129, 172, 255), center);
+      padding-bottom: 18px;
+    }
+  }
+
+
+  ////////////////////////////////////////////////////////////////////
+
+  .text-laptop{
+    &__button{
+      @include text('﻿Montserrat-Bold', 16px, rgba(255, 255, 255, 255), center);
+      padding-top: 25px;
+    }
+  }
+
+  ///////////////////////HOVER///////////////////////////
+
+  .laptop__button:hover{
+    background: #ffffff;
+  }
+
+  .laptop__button:hover .text-laptop__button{
+    color: rgba(141, 129, 172, 255);
+  }
+
+}
