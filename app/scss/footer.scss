@@ -31,7 +31,6 @@
   }
 
   .purchase{
-    //padding: 0 20% 5% 20% ;
     display: grid;
     grid-template-columns: 22% 22% 24% 22%;
     width: 100%;
@@ -40,8 +39,6 @@
       height: 457px;
       margin-top: 40px;
       padding-left: 2.5%;
-      //flex: 0 1 24%;
-      //margin-top: 50px;
     }
     &__header{
       @include text('Mo ntserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
@@ -218,15 +215,14 @@
   }
 
   .purchase{
-    padding: 0 20% 5% 20% ;
     display: grid;
-    grid-template-columns: 28% 28%;
+    grid-template-columns: 45% 45%;
     width: 100%;
 
     &__blok{
       height: 457px;
       margin-top: 40px;
-      margin-left: 8%;
+      margin-left: 10%;
     }
     &__header{
       @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);
@@ -408,7 +404,6 @@
   }
 
   .purchase{
-    padding: 0 16% 0 12%;
     display: grid;
     grid-template-columns: 70%;
     //flex-wrap: wrap;
@@ -419,7 +414,7 @@
       height: 457px;
       margin-top: 40px;
       width: 100%;
-      padding-left: 2.5%;
+      padding-left: 20%;
       margin-left: 0;
     }
     &__header{
@@ -492,7 +487,7 @@
       height: 560px;
       margin-top: 20px;
       min-width: 105%;
-      padding-left: 0;
+      padding-left: 17.2%;
     }
     &__header{
       @include text('Montserrat-Regular', 17.60719px, rgba(255, 255, 255, 255), center);

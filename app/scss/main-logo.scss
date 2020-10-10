@@ -22,6 +22,10 @@
     background: url("../img/backgraund/testmonials-bg@1X.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    &__title{
+      @include text('Montserrat-Bold', 35.21437px, rgba(255, 255, 255, 255), center);
+    }
   }
 
   .Logo{
@@ -30,9 +34,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    &__title{
-      @include text('Montserrat-Bold', 35.21437px, rgba(255, 255, 255, 255), center);
-    }
+    //&__title{
+    //  @include text('Montserrat-Bold', 35.21437px, rgba(255, 255, 255, 255), center);
+    //}
     &__blok{
       //margin-bottom: 75px;
     }
